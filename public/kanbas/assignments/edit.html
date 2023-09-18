@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment Edit Screen</title>
+</head>
+<body>
+    <h1>Edit Assignment</h1>
+    <form>
+        <label for="assignmentName">Assignment Name:</label>
+        <input type="text" id="assignmentName" placeholder="Assignment Name"><br><br>
+        
+        <label for="dueDate">Due:</label>
+        <input type="date" id="dueDate"><br><br>
+        
+        <label for="availableFrom">Available from:</label>
+        <input type="date" id="availableFrom"><br><br>
+        
+        <label for="until">Until:</label>
+        <input type="date" id="until"><br><br>
+        
+        <label for="submissionType">Submission Type:</label>
+        <select id="submissionType">
+            <option value="online">Online</option>
+        </select><br><br>
+        
+        <label for="submissionAttempts">Submission Attempts:</label>
+        <select id="submissionAttempts">
+            <option value="1">1</option>
+        </select><br><br>
+        
+        <label for="plagiarismReview">Plagiarism Review:</label>
+        <select id="plagiarismReview">
+            <option value="disabled">Disabled</option>
+        </select><br><br>
+        
+        <label for="onlineEntryOptions">Online Entry Options:</label>
+        <input type="checkbox" id="onlineEntryOptions"><br><br>
+        
+        <label for="groupAssignments">Group Assignments:</label>
+        <input type="checkbox" id="groupAssignments"><br><br>
+        
+        <label for="peerReviews">Peer Reviews:</label>
+        <input type="checkbox" id="peerReviews"><br><br>
+        
+        <button onclick="window.location.href='index.html';" type="button">Cancel</button>
+        <button onclick="window.location.href='index.html';" type="button">Save</button>
+    </form>
+</body>
+</html>
