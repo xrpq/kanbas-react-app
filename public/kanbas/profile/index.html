@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>Profile</title>
+    <script src="https://kit.fontawesome.com/3618b2d46c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="profile.css"> <!-- Include your CSS file here -->
+
 </head>
 <body>
     <table>
@@ -24,17 +27,19 @@
             </td>
             
             <!-- Second Column - Profile Content -->
-            <td valign = "top">
-                <h2>User Profile</h2>
-                <ul>
-                    <li><strong>Username:</strong> johndoe</li>
-                    <li><strong>First Name:</strong> John</li>
-                    <li><strong>Last Name:</strong> Doe</li>
-                    <li><strong>Contact:</strong> john.doe@example.com</li>
-                    <li><strong>Biography:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li><strong>Title:</strong> Developer</li>
-                    <li><strong>URL:</strong> <a href="#">http://www.example.com/johndoe</a></li>
-                </ul>
+            <td id="profile-screen" valign = "top">
+                <div id="profile-content">
+                    <i class="fa fa-user account-icon" style = "color: white"></i>
+                    <ul>
+                        <li><strong>Username:</strong> johndoe</li>
+                        <li><strong>First Name:</strong> John</li>
+                        <li><strong>Last Name:</strong> Doe</li>
+                        <li><strong>Contact:</strong> john.doe@example.com</li>
+                        <li><strong>Biography:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><strong>Title:</strong> Developer</li>
+                        <li><strong>URL:</strong> <a href="#">http://www.example.com/johndoe</a></li>
+                    </ul>
+                </div>
                 <a href="edit.html">Edit Profile</a>
             </td>
         </tr>
