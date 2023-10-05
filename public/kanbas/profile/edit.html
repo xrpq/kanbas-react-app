@@ -1,34 +1,187 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Profile</title>
+    <title>Profile</title>
+    <script src="https://kit.fontawesome.com/3618b2d46c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
 </head>
-<body>
-    <h1>Edit Profile</h1>
-    <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username" placeholder="Username"><br><br>
+<body class="container-fluid">
+    <div class="row">
+        <!-- First Column - Navigation Links -->
+        <div id="main-sidebar" class="col-md-2">
+            <ul>
+                <a href= "../home.html" > <img src="../neu black logo.jpg" alt="NEU black logo" width="75px"> </img> </a>
+                <!-- Account Section -->
+                <a href="../account.html" class = "current-primary-selection">
+                    <div id="account-section">
+                        <i class="fa fa-user-circle account-icon" style="color: gray"></i>
+                        <li class="link">Account</li>
+                    </div>
+                </a>
         
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" placeholder="First Name"><br><br>
+                <!-- Dashboard Section -->
+                <a href="../dashboard/dashboard.html">
+                    <div id="dashboard-section">
+                        <i class="fa fa-tachometer dashboard-icon"></i>
+                        <li class="link">Dashboard</li>
+                    </div>
+                </a>
         
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" placeholder="Last Name"><br><br>
+                <!-- Courses Section -->
+                <a href="../home.html">
+                    <div id="courses-section">
+                        <i class="fa fa-book courses-icon"></i>
+                        <li class="link">Courses</li>
+                    </div>
+                </a>
         
-        <label for="contact">Contact:</label>
-        <input type="text" id="contact" placeholder="Contact"><br><br>
+                <!-- Calendar Section -->
+                <a href="#">
+                    <div id="calendar-section">
+                        <i class="fa fa-calendar calendar-icon"></i>
+                        <li class="link">Calendar</li>
+                    </div>
+                </a>
         
-        <label for="biography">Biography:</label>
-        <textarea id="biography" rows="4" placeholder="Biography"></textarea><br><br>
+                <!-- Inbox Section -->
+                <a href="#">
+                    <div id="inbox-section">
+                        <i class="fa fa-inbox inbox-icon"></i>
+                        <li class="link">Inbox</li>
+                    </div>
+                </a>
         
-        <label for="title">Title:</label>
-        <input type="text" id="title" placeholder="Title"><br><br>
+                <!-- History Section -->
+                <a href="#">
+                    <div id="history-section">
+                        <i class="fa fa-history history-icon"></i>
+                        <li class="link">History</li>
+                    </div>
+                </a>
         
-        <label for="url">URL:</label>
-        <input type="text" id="url" placeholder="URL"><br><br>
+                <!-- Studio Section -->
+                <a href="#">
+                    <div id="studio-section">
+                        <i class="fa fa-video studio-icon"></i>
+                        <li class="link">Studio</li>
+                    </div>
+                </a>
         
-        <button onclick="window.location.href='index.html';" type="button">Save Profile</button>
-        <a href="index.html">Cancel Editing</a>
-    </form>
+                <!-- Commons Section -->
+                <a href="#">
+                    <div id="commons-section">
+                        <i class="fa fa-comments commons-icon"></i>
+                        <li class="link">Commons</li>
+                    </div>
+                </a>
+        
+                <!-- Help Section -->
+                <a href="#">
+                    <div id="help-section">
+                        <i class="fa fa-question-circle help-icon"></i>
+                        <li class="link">Help</li>
+                    </div>
+                </a>
+        
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </div>
+
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <!-- Content for the new section above the sidebar and profile --> <h3>John Doe's Profile</h3>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class = "row">
+                <!-- Second Column - Account Navigation Section -->
+                <div id="second-nav-sidebar" class="col">
+                    <ul id="second-nav-sidebar-content">
+                        <li class="link"><a href="#">Notifications</a></li>
+                        <li class="current-second-selection link"><a href="index.html">Profile</a></li>
+                        <li class="link"><a href="#">Files</a></li>
+                        <li class="link"><a href="#">Settings</a></li>
+                        <li class="link"><a href="#">ePortfolios</a></li>
+                        <li class="link"><a href="#">Shared Content</a></li>
+                        <li class="link"><a href="#">The Hub</a></li>
+                        <li class="link"><a href="#">Qwickly Course Tools</a></li>
+                        <li class="link"><a href="#">Global Announcements</a></li>
+                        <!-- Add more navigation links as needed -->
+                    </ul>
+                </div>
+                
+                <!-- Third Column - Profile Content -->
+                <div class="col">
+
+                    <!-- Profile Screen Styles -->
+                    <i class="fa fa-user-circle account-icon bigger-icon" style="color: gray"></i>
+                    <div id="edit-profile-screen">
+                        <form>
+                            <h5 for="name">Name:</h5>
+                            <input type="text" id="name" class="form-control" placeholder="Name"><br><br>
+                            
+                            <h5 for="pronouns">Pronouns:</h5>
+                            <select id="pronouns">
+                                <option value="None">None</option>
+                                <option value="He/Him">He/Him</option>
+                                <option value="She/Her">She/Her</option>
+                                <option value="They/Them">They/Them</option>
+                                <!-- Add more pronoun options as needed -->
+                            </select><br><br>
+                            
+                            <h5 for="title">Title:</h5>
+                            <input type="text" id="title" class="form-control" placeholder="Title"><br><br>
+                            
+                            <h5 for="contact">Contact</h5>
+                            <p id="contact"> placeholder text</p>
+                            
+                            <h5 for="biography">Biography:</h5>
+                            <textarea id="biography" class="form-control" rows="4" placeholder="Biography">Default Biography Text</textarea><br><br>
+                            
+                             <!-- Links section -->
+                             <h5 for="links">Links</h5>
+                             <div class="row">
+                                 <div class="col">
+                                     <!-- Title column -->
+                                     <p for="linktext">Title:</p>
+                                     <input type="text" id="linktext" class="form-control" placeholder="Link Title">
+                                 </div>
+                                 <div class="col">
+                                     <!-- URL column -->
+                                     <p for="urltext">URL:</p>
+                                     <input type="text" id="urltext" class="form-control" placeholder="Link URL">
+                                 </div>
+                             </div>
+                             <br>
+                             
+                             <div class="row">
+                                 <div class="col">
+                                     <!-- Buttons aligned to the right -->
+                                     <a href="index.html">
+                                     <button type="button" class="btn btn-secondary btn-sm float-end"><i class="fa fa-pencil"></i> Cancel</button>
+                                     <button type="button" class="btn btn-danger btn-sm float-end">Save Profile</button>
+                                     </a>
+                                 </div>
+                             </div>
+                            
+                        </form>
+                        
+                        
+                </div>
+                
+                 
+            </div>
+            <div class="col">
+                <a href="index.html">
+                    <button type="button" class="btn btn-secondary btn-sm float-end"> <i class="fa fa-pencil"></i> Cancel Editing</button>                   
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

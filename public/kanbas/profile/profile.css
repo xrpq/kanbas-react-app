@@ -1,31 +1,50 @@
 /* Profile Screen Styles */
 #profile-screen {
-    padding: 20px;
-    background-color: #f3f3f3;
-    text-align: left;
-  }
-  
-  #profile-content {
-    margin-bottom: 20px;
-  }
-  
-  .account-icon {
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: white; /* If you want to set the icon color to white */
-  }
-  
-  .full-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
+  padding: 20px;
+  text-align: left;
+}
+
+.account-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: gray; /* Set icon color to gray */
+}
+
+.full-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Increased margin between name and sections */
+}
+
+/* Added styles for sections and links */
+.section {
+  margin-bottom: 20px;
+}
+
+/* Style links within sections */
+
+/* Bootstrap button style */
+.btn {
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Button font size */
+}
+
+.btn-primary {
+  background-color: lightgray; /* Button background color */
+  color: black; /* Button text color */
+  border-color: lightgray;
+}
+
+.btn-primary:hover {
+  background-color: darkgray; /* Button background color on hover */
+}
+
+.btn i.fa-pencil {
+  margin-right: 5px; /* Adjust the margin as needed to control the icon's position */
+  font-size: 16px; /* Adjust the icon's size as needed */
+}
+
+.bigger-icon {
+  font-size: 100px; /* Adjust the size as needed */
+}
+

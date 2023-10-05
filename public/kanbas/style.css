@@ -1,9 +1,8 @@
 /* Account Page Styles */
 body {
-  font-family: 'Roboto';
   margin: 0;
   padding: 0;
-  background-color: #f3f3f3;
+  background-color: white;
 }
 
 table {
@@ -14,88 +13,291 @@ table {
 
 td {
   vertical-align: top;
-  padding: 0px;
+  padding: 0;
 }
 
-#main-sidebar {
-  background-color: #000; /* Black background for the main sidebar */
-  width: 75px; /* Adjust the width as needed (between 75px and 85px) */
-  text-align: center;
-}
-
-#main-sidebar ul {
+ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-#main-sidebar .fa {
-  font-size: 24px; /* Adjust icon size as needed */
-  margin: 10px 0; /* Margin around icons */
-  color: red; /* Default color for icons (red) */
+h2 {
+  white-space: break-word;
+}
+
+a {
+  color: #B22222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.fa-link {
+  margin-right: 5px;
+}
+
+#main-sidebar {
+  background-color: #000;
+  width: 85px;
+  text-align: center;
+  padding: 0;
+  margin-right: 20px;
+  min-height: 100vh;
 }
 
 #main-sidebar .fa-user {
-  color: white; /* Account icon color (white) */
+  color: white;
 }
 
-#main-sidebar #link {
-  padding: 10px; /* Padding around links */
+#main-sidebar .fa {
+  font-size: 24px;
+  margin: 5px 0;
+  color: #B22222;
+}
+
+#main-sidebar .link {
+  padding: 5px 0;
 }
 
 #main-sidebar a {
-  color: white; /* Default text color for links (white) */
+  color: white;
   text-decoration: none;
   display: block;
   padding: 5px 0;
-  
 }
 
 #main-sidebar .active a,
+#main-sidebar .current-primary-selection,
 #main-sidebar a:hover {
-  background-color: white; /* Active or hovered link background color (white) */
-  color: red; /* Active or hovered link text color (red) */
+  background-color: white;
+  color: #B22222;
   padding: 5px 0;
 }
 
-#main-sidebar #link.active a {
-  background-color: red; /* Active link background color (red) */
-  color: white; /* Active link text color (white) */
+#main-sidebar .link.active a {
+  background-color: #B22222;
+  color: white;
 }
 
-#account-nav-sidebar {
-  padding: 20px;
+/* Space between Kanbas Navigation sidebar and selected link in Account Navigation */
+#second-nav-sidebar .current-primary-selection {
+  margin-left: 25px;
 }
 
-#account-nav-sidebar h2 {
+#second-nav-sidebar .current-second-selection {
+  margin-left: 25px;
+  padding-left: 8px;
+  border-left: 2px solid black;
+}
+
+#second-nav-sidebar .current-second-selection a {
+  color: black !important;
+}
+
+#second-nav-sidebar {
+  width: 190px;
+  max-width: 200px;
+}
+
+#second-nav-sidebar h2 {
   font-size: 20px;
 }
 
-#account-nav-sidebar ul {
+#second-nav-sidebar ul {
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
 }
 
-
-/* #account-nav-sidebar-content ul{
-  border-radius: 1px;
-  border-color: black;
-} */
-
-#account-nav-sidebar-content #link {
-  padding: 5px;
+#second-nav-sidebar ul li {
+  margin-bottom: 20px;
 }
 
-#account-nav-sidebar-content #link :hover {
-  color: black; /* Hovered link text color (black) */
-  border-left-color: black;
+#second-nav-sidebar-content .link {
+  word-wrap: break-word;
 }
 
-#account-nav-sidebar-content #link a {
-  color: red; /* Text color for links (red) */
+.link :hover {
+  color: black !important;
+}
+
+#second-nav-sidebar-content .link a {
+  color: #B22222;
   text-decoration: none;
   display: block;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.section h3 {
+  font-size: 18px;
+}
+
+.local-header {
+  border-bottom: black;
+  border-bottom-style: solid;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.col-md-10 {
+  padding: 0;
+}
+
+.save-btn {
+  background-color: #B22222 !important;
+  color: white !important;
+}
+
+.custom-lightgray-btn{
+  background-color: #f5f5f5; /* Light gray background color */
+  color: black; /* Black text color */
+  border-radius: 2px; /* Rounded corners */
+  border: 1px solid #ddd;  /* Add a 1px border slightly darker than the button */
+  cursor: pointer;
+  margin: 1px;
+}
+
+.status-btn{
+  width:100%;
+  text-align: left;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distribute buttons evenly */
+}
+
+.custom-left-btn {
+  flex: 1; /* Each button takes up 50% of the width */
+  background-color: #f5f5f5; /* Light gray background for left button */
+  border-radius: 2px;
+  border: 1px solid #ddd; /* Add a 1px border slightly darker than the button */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Added border-color transition */
+}
+
+.custom-right-btn {
+  flex: 1; /* Each button takes up 50% of the width */
+  background-color: #77DD77; /* Light green background for right button */
+  color: white;
+  border-radius: 2px;
+  border: 1px solid #79c179; /* Add a 1px border slightly darker than the button */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Added border-color transition */
+}
+
+.custom-left-btn:hover,
+.custom-right-btn:hover {
+  background-color: #ddd; /* Darker gray on hover for both buttons */
+  color: black;
+  border-color: #bbb; /* Slightly darker border on hover */
+}
+
+/* Change the separator to ">" in the breadcrumb */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: " > ";
+}
+
+.fa-check-circle {
+  color: green;
+}
+
+.white-icon{
+  color: white !important;
+}
+
+.fa-plus{
+  color: gray;
+}
+
+.larger-text {
+  font-size: 1.25em; /* Adjust the size as needed */
+}
+
+.fa-calendar {
+  color: gray;
+}
+
+.fa-user-circle {
+  color: gray !important;
+}
+
+.fa-eye-slash {
+  color: gray !important;
+}
+/* Style specific Font Awesome icons */
+.fa-info-circle {
+  color: gray;
+}
+
+.fa-times {
+  color: gray;
+}
+
+.fa-check {
+  color: gray;
+}
+
+.fa-upload {
+  color: gray;
+}
+
+.fa-cloud-download-alt {
+  color: gray;
+}
+
+.fa-home {
+  color: gray;
+}
+
+.fa-eye {
+  color: gray;
+}
+
+.fa-bullhorn {
+  color: gray;
+}
+
+.fa-chart-bar {
+  color: gray;
+}
+
+.fa-bell {
+  color: gray;
+}
+
+.item-text {
+  margin-bottom: 0px;
 }
 
 
+.group-item-icon-section {
+  width:50px;
+}
 
+.list-group-item  p{
+  color: gray;
+}
+
+.list-group-icon-image {
+  width: 50px;
+}
+
+@media (max-width: 1200px) {
+  .course-status-column {
+      display: none;
+  }
+}
+
+@media (max-width: 970px) {
+  #main-sidebar {
+      display: none;
+  }
+}
+
+@media (max-width: 970px) {
+  #second-nav-sidebar {
+      display: none;
+  }
+}

@@ -3,46 +3,153 @@
 <head>
     <title>Profile</title>
     <script src="https://kit.fontawesome.com/3618b2d46c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="profile.css"> <!-- Include your CSS file here -->
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="profile.css">
 </head>
-<body>
-    <table>
-        <tr>
-            <!-- First Column - Navigation Links -->
-            <td valign = "top">
-                <h2>Kanbas Navigation</h2>
-                <ul>
-                    <li><a href="index.html">Account</a></li>
-                    <li><a href="index.html">Profile</a></li>
-                    <li><a href="../home.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                    <!-- Add more navigation links as needed -->
-                </ul>
-            </td>
-            
-            <!-- Second Column - Profile Content -->
-            <td id="profile-screen" valign = "top">
-                <div id="profile-content">
-                    <i class="fa fa-user account-icon" style = "color: white"></i>
-                    <ul>
-                        <li><strong>Username:</strong> johndoe</li>
-                        <li><strong>First Name:</strong> John</li>
-                        <li><strong>Last Name:</strong> Doe</li>
-                        <li><strong>Contact:</strong> john.doe@example.com</li>
-                        <li><strong>Biography:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li><strong>Title:</strong> Developer</li>
-                        <li><strong>URL:</strong> <a href="#">http://www.example.com/johndoe</a></li>
+<body class="container-fluid">
+    <div class="row">
+        <!-- First Column - Navigation Links -->
+        <div id="main-sidebar" class="col-md-2">
+            <ul>
+                <a href= "../home.html" > <img src="../neu black logo.jpg" alt="NEU black logo" width="75px"> </img> </a>
+                <!-- Account Section -->
+                <a href="../account.html" class = "current-primary-selection">
+                    <div id="account-section">
+                        <i class="fa fa-user-circle account-icon" style="color: gray"></i>
+                        <li class="link">Account</li>
+                    </div>
+                </a>
+        
+                <!-- Dashboard Section -->
+                <a href="../dashboard/dashboard.html">
+                    <div id="dashboard-section">
+                        <i class="fa fa-tachometer dashboard-icon"></i>
+                        <li class="link">Dashboard</li>
+                    </div>
+                </a>
+        
+                <!-- Courses Section -->
+                <a href="../home.html">
+                    <div id="courses-section">
+                        <i class="fa fa-book courses-icon"></i>
+                        <li class="link">Courses</li>
+                    </div>
+                </a>
+        
+                <!-- Calendar Section -->
+                <a href="#">
+                    <div id="calendar-section">
+                        <i class="fa fa-calendar calendar-icon"></i>
+                        <li class="link">Calendar</li>
+                    </div>
+                </a>
+        
+                <!-- Inbox Section -->
+                <a href="#">
+                    <div id="inbox-section">
+                        <i class="fa fa-inbox inbox-icon"></i>
+                        <li class="link">Inbox</li>
+                    </div>
+                </a>
+        
+                <!-- History Section -->
+                <a href="#">
+                    <div id="history-section">
+                        <i class="fa fa-history history-icon"></i>
+                        <li class="link">History</li>
+                    </div>
+                </a>
+        
+                <!-- Studio Section -->
+                <a href="#">
+                    <div id="studio-section">
+                        <i class="fa fa-video studio-icon"></i>
+                        <li class="link">Studio</li>
+                    </div>
+                </a>
+        
+                <!-- Commons Section -->
+                <a href="#">
+                    <div id="commons-section">
+                        <i class="fa fa-comments commons-icon"></i>
+                        <li class="link">Commons</li>
+                    </div>
+                </a>
+        
+                <!-- Help Section -->
+                <a href="#">
+                    <div id="help-section">
+                        <i class="fa fa-question-circle help-icon"></i>
+                        <li class="link">Help</li>
+                    </div>
+                </a>
+        
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </div>
+
+        <div class="col">
+            <div class="row local-header">
+                <div class="col-md-12">
+                    <!-- Content for the new section above the sidebar and profile --> <h3>John Doe's Profile</h3>
+                </div>
+            </div>
+
+            <div class = "row">
+                <!-- Second Column - Account Navigation Section -->
+                <div id="second-nav-sidebar" class="col">
+                    <ul id="second-nav-sidebar-content">
+                        <li class="link"><a href="#">Notifications</a></li>
+                        <li class="current-second-selection link"><a href="index.html">Profile</a></li>
+                        <li class="link"><a href="#">Files</a></li>
+                        <li class="link"><a href="#">Settings</a></li>
+                        <li class="link"><a href="#">ePortfolios</a></li>
+                        <li class="link"><a href="#">Shared Content</a></li>
+                        <li class="link"><a href="#">The Hub</a></li>
+                        <li class="link"><a href="#">Qwickly Course Tools</a></li>
+                        <li class="link"><a href="#">Global Announcements</a></li>
+                        <!-- Add more navigation links as needed -->
                     </ul>
                 </div>
-                <a href="edit.html">Edit Profile</a>
-            </td>
-        </tr>
-    </table>
+                
+                <!-- Third Column - Profile Content -->
+                <div class="col">
+
+                    <!-- Profile Screen Styles -->
+                    <div id="profile-screen">
+                        <div id="profile-content">
+                            <i class="fa fa-user-circle account-icon bigger-icon" style="color: gray"></i>
+                            <div class="full-name">
+                                John Doe
+                            </div>
+                            <div class="section">
+                                <h3>Contact</h3>
+                                <p>john.doe@example.com</p>
+                            </div>
+                            <div class="section">
+                                <h3>Biography</h3>
+                                <p>Hi, I'm John Doe. I'm a student at Northeastern University.</p>
+                            </div>
+                            <div class="section">
+                                <h3>Links</h3>
+                                <!-- Links should be preceded by a link icon directly to their left -->
+                                <i class="fa fa-link"></i><a href="https://youtube.com">https://youtube.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fourth Column - Edit Profile Button -->
+                <div class="col">
+                    <a href="edit.html" class="btn btn-primary">
+                        <i class="fa fa-pencil"></i> Edit Profile
+                    </a>                    
+                </div>
+
+                <!-- Fifth Column - Profile Picture -->    
+            </div>
+        </div>
+    </div>
 </body>
 </html>
