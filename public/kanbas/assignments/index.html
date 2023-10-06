@@ -92,13 +92,27 @@
 
         <div class="col"> <!-- for everything to the right of the main sidebar-->
             <div class="row">
-                <div class="col-12">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Assignments</li> <!-- Home in breadcrumb -->
-                        </ol>
-                    </nav>
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+
+                        <div class = "col">
+                            <nav aria-label="breadcrumb">
+
+                                <ol class="breadcrumb mb-0">
+                                    <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Assignments</li> <!-- Home in breadcrumb -->
+                                </ol>
+                                
+                            </nav>
+                        </div>
+
+                        <div class = "col-2">
+                            <button class="btn custom-lightgray-btn text-muted">
+                                <i class="fas fa-glasses"></i> Student View
+                            </button>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <hr>
@@ -146,181 +160,198 @@
                                 <i class="fa fa-plus" aria-hidden="true"></i>
                                 Group
                             </button>
+
+                            <input type="text" class="form-control w-25" placeholder="Search for Assignment">
                         </div>
                     </div>
                     <hr>
                     <div class="row">
                         <div class="col-12">
                             <!-- Modules List using Bootstrap classes -->
-                            <ul class="list-group">
+                            <ul class="list-group rounded-0">
                                 <!-- Module 1 -->
-                                <li class="list-group-item list-group-item-secondary">
-                                        <h5>Assignments</h5>
+                                <li class="list-group-item list-group-item-secondary rounded-0">
+                                    <div class="row">
+                                        <div class="align-items-center justify-content-center h-100">
+                                            <i class="fa fa-ellipsis-v float-end me-2" aria-hidden="true"></i> 
+                                            <i class="fa fa-plus float-end me-2" aria-hidden="true"></i>
+                                            <p class="rounded-pill border border-secondary float-end ps-2 pe-2 mb-0  me-2 border-1">40% of Total</p>
+                                    
+                                            <h5 class = "mb-0">Assignments</h5>
+                                        </div>
+                                    </div>
                                 </li>
 
-                                <li class="list-group-item ps-5">
-                                    <div class="row d-flex">
+
+                                <li class="list-group-item assignment-item">
+                                    <div class="row">
                                         <!-- Left Column - Paper Icon -->
-                                        <div class="col">
-                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                                            </div>
                                         </div>
                                     
                                         <!-- Middle Column - Text and Filler -->
                                         <div class="col">
-                                            <h5 class="item-text">A1 Setup</h5>    
-                                            <p class="item-text"> Week 0 Setup </p>
-                                            <p class="item-text"> Due sep 18 </p>
+                                            <div class="align-items-center justify-content-center h-100">
+                                                <h5 class="item-text">A1 Setup</h5>    
+                                                <p class="item-text"> Week 0 Setup </p>
+                                                <p class="item-text"> <strong>Due</strong> sep 18 </p>
+                                            </div>
                                         </div>
                                     
                                         <!-- Right Column - Three Icons -->
-                                        <div class="col">
-                                            <i class="fa fa-ellipsis-v float-end pe-2" aria-hidden="true"></i>
-                                            <i class="fa fa-check-circle float-end pe-2" aria-hidden="true"></i>   
-                                                                               
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-ellipsis-v float-end me-2" aria-hidden="true"></i>
+                                                <i class="fa fa-check-circle float-end  me-2" aria-hidden="true"></i>  
+                                            </div>                                    
                                         </div>
                                     </div>
                                     
                                 </li>
 
-                                <li class="list-group-item ps-5">
-                                    <div class="row d-flex">
+                                <li class="list-group-item assignment-item">
+                                    <div class="row">
                                         <!-- Left Column - Paper Icon -->
-                                        <div class="col">
-                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                                            </div>
                                         </div>
                                     
                                         <!-- Middle Column - Text and Filler -->
                                         <div class="col">
-                                            <h5 class="item-text">A1 Setup</h5>    
-                                            <p class="item-text"> Week 0 Setup </p>
-                                            <p class="item-text"> Due sep 18 </p>
+                                            <div class="align-items-center justify-content-center h-100">
+                                                <h5 class="item-text">A2 HTML</h5>    
+                                                <p class="item-text"> Week 0 Setup </p>
+                                                <p class="item-text"> <strong>Due</strong> sep 18 </p>
+                                            </div>
                                         </div>
                                     
                                         <!-- Right Column - Three Icons -->
-                                        <div class="col">
-                                            <i class="fa fa-ellipsis-v float-end pe-2" aria-hidden="true"></i>
-                                            <i class="fa fa-check-circle float-end pe-2" aria-hidden="true"></i>   
-                                                                               
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-ellipsis-v float-end me-2" aria-hidden="true"></i>
+                                                <i class="fa fa-check-circle float-end  me-2" aria-hidden="true"></i>  
+                                            </div>                                    
                                         </div>
                                     </div>
                                     
                                 </li>
 
-                                <<li class="list-group-item ps-5">
-                                    <div class="row d-flex">
+                                <li class="list-group-item assignment-item">
+                                    <div class="row">
                                         <!-- Left Column - Paper Icon -->
-                                        <div class="col">
-                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                                            </div>
                                         </div>
                                     
                                         <!-- Middle Column - Text and Filler -->
                                         <div class="col">
-                                            <h5 class="item-text">A1 Setup</h5>    
-                                            <p class="item-text"> Week 0 Setup </p>
-                                            <p class="item-text"> Due sep 18 </p>
+                                            <div class="align-items-center justify-content-center h-100">
+                                                <h5 class="item-text">A3 CSS</h5>    
+                                                <p class="item-text"> Week 0 Setup </p>
+                                                <p class="item-text"> <strong>Due</strong> sep 18 </p>
+                                            </div>
                                         </div>
                                     
                                         <!-- Right Column - Three Icons -->
-                                        <div class="col">
-                                            <i class="fa fa-ellipsis-v float-end pe-2" aria-hidden="true"></i>
-                                            <i class="fa fa-check-circle float-end pe-2" aria-hidden="true"></i>   
-                                                                               
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-ellipsis-v float-end me-2" aria-hidden="true"></i>
+                                                <i class="fa fa-check-circle float-end  me-2" aria-hidden="true"></i>  
+                                            </div>                                    
                                         </div>
                                     </div>
                                     
                                 </li>
 
-                                <li class="list-group-item ps-5">
-                                    <div class="row d-flex">
+                                <li class="list-group-item assignment-item">
+                                    <div class="row">
                                         <!-- Left Column - Paper Icon -->
-                                        <div class="col">
-                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                                            </div>
                                         </div>
                                     
                                         <!-- Middle Column - Text and Filler -->
                                         <div class="col">
-                                            <h5 class="item-text">A1 Setup</h5>    
-                                            <p class="item-text"> Week 0 Setup </p>
-                                            <p class="item-text"> Due sep 18 </p>
+                                            <div class="align-items-center justify-content-center h-100">
+                                                <h5 class="item-text">A4 BOOTSTRAP</h5>    
+                                                <p class="item-text"> Week 0 Setup </p>
+                                                <p class="item-text"> <strong>Due</strong> sep 18 </p>
+                                            </div>
                                         </div>
                                     
                                         <!-- Right Column - Three Icons -->
-                                        <div class="col">
-                                            <i class="fa fa-ellipsis-v float-end pe-2" aria-hidden="true"></i>
-                                            <i class="fa fa-check-circle float-end pe-2" aria-hidden="true"></i>   
-                                                                               
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-ellipsis-v float-end me-2" aria-hidden="true"></i>
+                                                <i class="fa fa-check-circle float-end  me-2" aria-hidden="true"></i>  
+                                            </div>                                    
                                         </div>
                                     </div>
                                     
                                 </li>
 
-                                <li class="list-group-item ps-5">
-                                    <div class="row d-flex">
+                                <li class="list-group-item assignment-item">
+                                    <div class="row">
                                         <!-- Left Column - Paper Icon -->
-                                        <div class="col">
-                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                                            </div>
                                         </div>
                                     
                                         <!-- Middle Column - Text and Filler -->
                                         <div class="col">
-                                            <h5 class="item-text">A1 Setup</h5>    
-                                            <p class="item-text"> Week 0 Setup </p>
-                                            <p class="item-text"> Due sep 18 </p>
+                                            <div class="align-items-center justify-content-center h-100">
+                                                <h5 class="item-text">A5 JAVASCRIPT</h5>    
+                                                <p class="item-text"> Week 0 Setup </p>
+                                                <p class="item-text"> <strong>Due</strong> sep 18 </p>
+                                            </div>
                                         </div>
                                     
                                         <!-- Right Column - Three Icons -->
-                                        <div class="col">
-                                            <i class="fa fa-ellipsis-v float-end pe-2" aria-hidden="true"></i>
-                                            <i class="fa fa-check-circle float-end pe-2" aria-hidden="true"></i>   
-                                                                               
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-ellipsis-v float-end me-2" aria-hidden="true"></i>
+                                                <i class="fa fa-check-circle float-end  me-2" aria-hidden="true"></i>  
+                                            </div>                                    
                                         </div>
                                     </div>
                                     
                                 </li>
 
-                                <li class="list-group-item ps-5">
-                                    <div class="row d-flex">
+                                <li class="list-group-item assignment-item">
+                                    <div class="row">
                                         <!-- Left Column - Paper Icon -->
-                                        <div class="col">
-                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>
+                                            </div>
                                         </div>
                                     
                                         <!-- Middle Column - Text and Filler -->
                                         <div class="col">
-                                            <h5 class="item-text">A1 Setup</h5>    
-                                            <p class="item-text"> Week 0 Setup </p>
-                                            <p class="item-text"> Due sep 18 </p>
+                                            <div class="align-items-center justify-content-center h-100">
+                                                <h5 class="item-text">A6 REACT</h5>    
+                                                <p class="item-text"> Week 0 Setup </p>
+                                                <p class="item-text"> <strong>Due</strong> sep 18 </p>
+                                            </div>
                                         </div>
                                     
                                         <!-- Right Column - Three Icons -->
-                                        <div class="col">
-                                            <i class="fa fa-ellipsis-v float-end pe-2" aria-hidden="true"></i>
-                                            <i class="fa fa-check-circle float-end pe-2" aria-hidden="true"></i>   
-                                                                               
-                                        </div>
-                                    </div>
-                                    
-                                </li>
-
-                                <li class="list-group-item ps-5">
-                                    <div class="row d-flex">
-                                        <!-- Left Column - Paper Icon -->
-                                        <div class="col">
-                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                        </div>
-                                    
-                                        <!-- Middle Column - Text and Filler -->
-                                        <div class="col">
-                                            <h5 class="item-text">A1 Setup</h5>    
-                                            <p class="item-text"> Week 0 Setup </p>
-                                            <p class="item-text"> Due sep 18 </p>
-                                        </div>
-                                    
-                                        <!-- Right Column - Three Icons -->
-                                        <div class="col">
-                                            <i class="fa fa-ellipsis-v float-end pe-2" aria-hidden="true"></i>
-                                            <i class="fa fa-check-circle float-end pe-2" aria-hidden="true"></i>   
-                                                                               
+                                        <div class="col-1">
+                                            <div class="d-flex align-items-center justify-content-center h-100">
+                                                <i class="fa fa-ellipsis-v float-end me-2" aria-hidden="true"></i>
+                                                <i class="fa fa-check-circle float-end  me-2" aria-hidden="true"></i>  
+                                            </div>                                    
                                         </div>
                                     </div>
                                     

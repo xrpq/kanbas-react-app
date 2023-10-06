@@ -284,6 +284,11 @@ a:hover {
   width: 50px;
 }
 
+.assignment-item {
+  border-left-width: 5px;
+  border-left-color:rgb(3, 151, 3);
+}
+
 @media (max-width: 1200px) {
   .course-status-column {
       display: none;
