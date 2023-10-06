@@ -1,51 +1,388 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link href="/public/vendors/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="../style.css"> 
-    <title>Assignment Edit Screen</title>
+    <title>(Current Course Code) Details</title>
+    <script src="https://kit.fontawesome.com/3618b2d46c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body class="container-fluid">
-    <h1>Edit Assignment</h1>
-    <form>
-        <label for="assignmentName">Assignment Name:</label>
-        <input type="text" id="assignmentName" placeholder="Assignment Name"><br><br>
-        
-        <label for="dueDate">Due:</label>
-        <input type="date" id="dueDate"><br><br>
-        
-        <label for="availableFrom">Available from:</label>
-        <input type="date" id="availableFrom"><br><br>
-        
-        <label for="until">Until:</label>
-        <input type="date" id="until"><br><br>
-        
-        <label for="submissionType">Submission Type:</label>
-        <select id="submissionType">
-            <option value="online">Online</option>
-        </select><br><br>
-        
-        <label for="submissionAttempts">Submission Attempts:</label>
-        <select id="submissionAttempts">
-            <option value="1">1</option>
-        </select><br><br>
-        
-        <label for="plagiarismReview">Plagiarism Review:</label>
-        <select id="plagiarismReview">
-            <option value="disabled">Disabled</option>
-        </select><br><br>
-        
-        <label for="onlineEntryOptions">Online Entry Options:</label>
-        <input type="checkbox" id="onlineEntryOptions"><br><br>
-        
-        <label for="groupAssignments">Group Assignments:</label>
-        <input type="checkbox" id="groupAssignments"><br><br>
-        
-        <label for="peerReviews">Peer Reviews:</label>
-        <input type="checkbox" id="peerReviews"><br><br>
-        
-        <button onclick="window.location.href='index.html';" type="button">Cancel</button>
-        <button onclick="window.location.href='index.html';" type="button">Save</button>
-    </form>
+    <div class="row">
+        <!-- First Column - Navigation Links -->
+        <div id="main-sidebar" class="col-md-2">
+            <ul>
+                <a href="./home.html"> <img src="../neu black logo.jpg" alt="NEU black logo" width="75px"> </a>
+                <!-- Account Section -->
+                <a href="./account.html">
+                    <div id="account-section">
+                        <i class="fa fa-user-circle account-icon" style="color: gray"></i>
+                        <li class="link">Account</li>
+                    </div>
+                </a>
+
+                <!-- Dashboard Section -->
+                <a href="../dashboard/dashboard.html">
+                    <div id="dashboard-section">
+                        <i class="fa fa-tachometer dashboard-icon"></i>
+                        <li class="link">Dashboard</li>
+                    </div>
+                </a>
+
+                <!-- Courses Section -->
+                <a href="./home.html" class="current-primary-selection">
+                    <div id="courses-section">
+                        <i class="fa fa-book courses-icon"></i>
+                        <li class="link">Courses</li>
+                    </div>
+                </a>
+
+                <!-- Calendar Section -->
+                <a href="#">
+                    <div id="calendar-section">
+                        <i class="fa fa-calendar calendar-icon"></i>
+                        <li class="link">Calendar</li>
+                    </div>
+                </a>
+
+                <!-- Inbox Section -->
+                <a href="#">
+                    <div id="inbox-section">
+                        <i class="fa fa-inbox inbox-icon"></i>
+                        <li class="link">Inbox</li>
+                    </div>
+                </a>
+
+                <!-- History Section -->
+                <a href="#">
+                    <div id="history-section">
+                        <i class="fa fa-history history-icon"></i>
+                        <li class="link">History</li>
+                    </div>
+                </a>
+
+                <!-- Studio Section -->
+                <a href="#">
+                    <div id="studio-section">
+                        <i class="fa fa-video studio-icon"></i>
+                        <li class="link">Studio</li>
+                    </div>
+                </a>
+
+                <!-- Commons Section -->
+                <a href="#">
+                    <div id="commons-section">
+                        <i class="fa fa-comments commons-icon"></i>
+                        <li class="link">Commons</li>
+                    </div>
+                </a>
+
+                <!-- Help Section -->
+                <a href="#">
+                    <div id="help-section">
+                        <i class="fa fa-question-circle help-icon"></i>
+                        <li class="link">Help</li>
+                    </div>
+                </a>
+
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </div>
+
+        <div class="col main-content"> <!-- for everything to the right of the main sidebar-->
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+
+                        <div class="col">
+                            <nav aria-label="breadcrumb">
+
+                                <ol class="breadcrumb mb-0">
+                                    <li class="breadcrumb-item"><a href="#">CS4550.12631.202410</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                                    <!-- Home in breadcrumb -->
+                                    <li class="breadcrumb-item active" aria-current="page">A1 ENV</li>
+                                </ol>
+
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row"> <!-- content-->
+
+                <div class="col " id="second-nav-sidebar"> <!-- second sidebar-->
+
+                    <ul id="second-nav-sidebar-content">
+                        <li class="link"> <a href="home.html">Home</a></li>
+                        <li class="link"><a href="#">Modules</a></li>
+                        <li class="link"><a href="#">Piazza</a></li>
+                        <li class="link"><a href="#">Zoom Meetings</a></li>
+                        <li class="current-second-selection link"><a href="./index.html">Assignments</a></li>
+                        <li class="link"><a href="#">Quizes</a></li>
+                        <li class="link"><a href="grades.html">Grades</a></li>
+                        <li class="link"><a href="#">People</a></li>
+                        <li class="link"><a href="#">Panopto Video</a></li>
+                        <li class="link"><a href="#">Discussions <i class="fa fa-eye-slash float-end"
+                                    aria-hidden="true"></i></a> </li>
+                        <li class="link"><a href="#">Announcements <i class="fa fa-eye-slash float-end"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="link"><a href="#">Pages <i class="fa fa-eye-slash float-end"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="link"><a href="#">Files <i class="fa fa-eye-slash float-end"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="link"><a href="#">Rubrics <i class="fa fa-eye-slash float-end"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="link"><a href="#">Outcomes <i class="fa fa-eye-slash float-end"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="link"><a href="#">Collaborations <i class="fa fa-eye-slash float-end"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="link"><a href="#">Syllabus <i class="fa fa-eye-slash float-end"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="link"><a href="#">Settings</a></li>
+                        <!-- Add more course navigation links as needed -->
+                    </ul>
+
+                </div>
+
+                <div class="col"> <!-- middle column -->
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn custom-lightgray-btn float-end">
+                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                            </button>
+
+                            <p class="text-success float-end me-2 mb-0">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i> Published
+                            </p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <!-- Edit Assignment Form -->
+                    <form>
+                        <!-- Assignment Name Section -->
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="assignmentName" class="form-label">Assignment Name</label>
+                                <input type="text" class="form-control" id="assignmentName"
+                                    placeholder="Assignment Name">
+                            </div>
+                        </div>
+
+                        <!-- Description Section -->
+                        <div class="row">
+                            <div class="col">
+                                <textarea class="form-control" id="description" rows="4"
+                                    placeholder="Description"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Points and Assignment Group Section -->
+                        <div class="row mb-3">
+                            <!-- Points -->
+
+                            <div class="col-3">
+                                <label class="float-end text-body">Points</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="text" class="form-control" id="points" placeholder="100">
+                            </div>
+
+
+                        </div>
+
+                        <div class="row mb-3">
+                            <!-- Points -->
+
+                            <div class="col-3">
+                                <label class="float-end text-body">Assignment Group</label>
+                            </div>
+                            <div class="col-5">
+                                <select class="form-control">
+                                    <option>ASSIGNMENTS</option>
+                                    <option>Group A</option>
+                                    <option>Group B</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                        <!-- Display Grade as and Submission Type Section -->
+                        <div class="row mb-3">
+                            <!-- Points -->
+
+                            <div class="col-3">
+                                <label class="float-end text-body">Display Grade As</label>
+                            </div>
+                            <div class="col-5">
+                                <select class="form-control" id="percentageGroup">
+                                    <option class="text-muted">Percentage</option>
+                                    <option>Group A</option>
+                                    <option>Group B</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-3">
+                            </div>
+                            <div class="form-check col-5">
+                                <div class="ms-2">
+                                    <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                    <label class="form-check-label" for="exampleCheckbox">
+                                        Do not count this assignment towards the final grade
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <!-- Submission Type Dropdown -->
+                            <div class="col-3">
+                                <label class="float-end text-body">Submission Type</label>
+                            </div>
+
+
+                            <div class="col-5 border border-bottom-0 rounded-top pt-2">
+                                <select class="form-control" id="submissionType">
+                                    <option class="text-muted">Online</option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                    <option>Option 4</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Submission Type Options -->
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-3">
+                                    <!-- Empty column for alignment -->
+                                </div>
+                                <div class="col-5 border border-top-0 rounded-bottom pb-2">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option1">
+                                        <label class="form-check-label" for="option1">Text Entry</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option2">
+                                        <label class="form-check-label" for="option2">Website URL</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option3">
+                                        <label class="form-check-label" for="option3">Media Recordings</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="option4">
+                                        <label class="form-check-label" for="option4">Student Annotations</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- Submission Type Dropdown -->
+                                <div class="col-3">
+                                    <label class="float-end text-body">Assign</label>
+                                </div>
+                                <div class="col-5 border rounded pt-1">
+                                    <form>
+                                        <label for="assignTo" class = "mt-1"><strong>Assign to</strong></label>
+                                        <input type="text" class="form-control" id="assignTo" placeholder="Everyone" aria-describedby="button-addon2">
+                                        
+                                        <label for="due" class ="mt-4"><strong>Due</strong></label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" id="due" placeholder="MM/DD/YY" aria-describedby="button-addon2">
+                                            <div class="input-group-append">
+                                                <button class="btn custom-lightgray-btn" type="button" id="button-addon2">Button</button>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class = "row">
+                                            <div class="col pe-1">
+                                                <label for="due"><strong>Available from</strong></label>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="due" placeholder="MM/DD/YY" aria-describedby="button-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn custom-lightgray-btn" type="button" id="button-addon2">Button</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class = "col ps-1">
+                                                <label for="due"><strong>Until</strong></label>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" id="due" placeholder="MM/DD/YY" aria-describedby="button-addon2">
+                                                    <div class="input-group-append">
+                                                        <button class="btn custom-lightgray-btn rounded-right" type="button" id="button-addon2">Button</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+
+                                        <div class = "row bg-light d-flex align-items-center justify-content-center">
+                                            <a  class = "p-0"href="#">
+                                                <button class="btn w-100 custom-lightgray-btn m-0" type="button">+ Add</button>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <hr class = "mt-5 mb-2">
+
+                            <div class="form-check ">
+                                <div class="ms-2">
+                                    <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                    <label class="form-check-label" for="exampleCheckbox">
+                                        Notify users that this content has changed
+                                    </label>
+                                    <a href="./index.html">
+                                        <button type="button" class="btn btn-danger float-end">Save</button>
+                                        <button type="button" class="btn custom-lightgray-btn float-end">Cancel</button>
+                                    </a>
+
+                                    
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                        </form>
+                    </form>
+
+                </div>
+                
+
+
+
+
+
+
+
+
+
+    
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    </div>
+
 </body>
+
 </html>
