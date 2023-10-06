@@ -16,6 +16,10 @@ td {
   padding: 0;
 }
 
+td:hover {
+  background-color: lightblue !important;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -133,13 +137,6 @@ a:hover {
 
 .section h3 {
   font-size: 18px;
-}
-
-.local-header {
-  border-bottom: black;
-  border-bottom-style: solid;
-  margin-left: 15px;
-  margin-bottom: 15px;
 }
 
 .col-md-10 {
