@@ -29,13 +29,20 @@ ul {
 h2 {
   white-space: break-word;
 }
-
 a {
+  text-decoration: none;
+}
+
+.link{
   color: #B22222;
   text-decoration: none;
 }
 
-a:hover {
+.card-body {
+  color: gray;
+}
+
+.a:hover {
   color: black;
 }
 
