@@ -38,8 +38,12 @@ a {
   text-decoration: none;
 }
 
+.link:hover{
+  color: black;
+}
+
 .card-body {
-  color: gray;
+  color: darkslategray;
 }
 
 .a:hover {
