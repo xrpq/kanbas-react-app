@@ -279,7 +279,6 @@ a {
   margin-bottom: 0px;
 }
 
-
 .group-item-icon-section {
   width:50px;
 }
@@ -292,7 +291,7 @@ a {
   width: 50px;
 }
 
-.assignment-item {
+.assignment-item, .course-layout-item{
   border-left-width: 5px;
   border-left-color:rgb(3, 151, 3);
 }
