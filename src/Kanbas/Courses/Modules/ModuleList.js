@@ -39,7 +39,7 @@ function ModuleList() {
         Add
       </button>
 
-      <button className="float-end btn btn-primary mr-1"
+      <button className="float-end btn btn-primary"
         onClick={() => dispatch(updateModule(module))}>
         Update
       </button>
@@ -54,7 +54,7 @@ function ModuleList() {
 
             <li className="list-group-item list-group-item-secondary">
 
-              <button className="float-end btn btn-success pl-1"
+              <button className="float-end btn btn-success"
                 onClick={() => dispatch(setModule(module))}>
                 Edit
               </button>
@@ -82,3 +82,26 @@ function ModuleList() {
 }
 export default ModuleList;
 
+
+{/* <li className="list-group-item">
+<input
+value={module.name}
+onChange={(e) =>
+  dispatch(setModule({ ...module, name: e.target.value }))
+} />
+<textarea
+value={module.description}
+onChange={(e) =>
+  dispatch(setModule({ ...module, description: e.target.value }))
+} />
+
+<button className="float-end btn btn-success"
+onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+Add
+</button>
+
+<button className="float-end btn btn-primary"
+onClick={() => dispatch(updateModule(module))}>
+Update
+</button>
+</li> */}

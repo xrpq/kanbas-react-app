@@ -5,7 +5,7 @@
     "number": "RS4550",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "./images/gray.jpeg"
+    "image": "./images/blue.png"
   },
   {
     "_id": "RS102",
@@ -13,7 +13,7 @@
     "number": "RS4560",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "./images/gray.jpeg"
+    "image": "./images/grey.jpg"
 
   },
   {
@@ -22,7 +22,7 @@
     "number": "RS4570",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "./images/gray.jpeg"
+    "image": "./images/babyblue.jpg"
   },
 
   {
@@ -31,7 +31,7 @@
     "number": "CS4500",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "./images/gray.jpeg"
+    "image": "../images/grey.jpg"
   },
 
   {
@@ -40,7 +40,7 @@
     "number": "RS4570",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "./images/gray.jpeg"
+    "image": "./images/babyblue.jpg"
   },
 
   {
@@ -49,7 +49,7 @@
     "number": "RS4560",
     "startDate": "2023-01-10",
     "endDate": "2023-05-15",
-    "image": "./images/gray.jpeg"
+    "image": "./images/blue.png"
 
   }
 ]
